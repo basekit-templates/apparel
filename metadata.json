@@ -18,48 +18,48 @@
     "colorSwatches":
     {
         "Swatch 1": {
-            "color1":"#ffffff",
+            "color1":"#F2F2F2",
             "color2":"#1A7391",
             "color3":"#000000",
             "color4":"#2b3040",
             "color5":"#2b3040",
-            "color6":"#ffffff",
-            "color7":"#D2D2D2"
+            "color6":"#FFFFFF",
+            "color7":"#FFFFFF"
         },
         "Swatch 2": {
-            "color1":"#ffffff",
+            "color1":"#FFFFFF",
             "color2":"#ca1414",
             "color3":"#ca1414",
             "color4":"#000000",
             "color5":"#888888",
-            "color6":"#ffffff",
+            "color6":"#FFFFFF",
             "color7":"#D2D2D2"
         },
         "Swatch 3": {
-            "color1":"#ffffff",
+            "color1":"#FFFFFF",
             "color2":"#82E567",
             "color3":"#82E567",
             "color4":"#4F7391",
             "color5":"#888888",
-            "color6":"#ffffff",
+            "color6":"#FFFFFF",
             "color7":"#D2D2D2"
         },
         "Swatch 4": {
-            "color1":"#ffffff",
+            "color1":"#FFFFFF",
             "color2":"#6FA1ED",
             "color3":"#6FA1ED",
             "color4":"#000000",
             "color5":"#888888",
-            "color6":"#ffffff",
+            "color6":"#FFFFFF",
             "color7":"#D2D2D2"
         },
         "Swatch 5": {
-            "color1":"#ffffff",
+            "color1":"#FFFFFF",
             "color2":"#4BA5A1",
             "color3":"#4BA5A1",
             "color4":"#2B7774",
             "color5":"#888888",
-            "color6":"#ffffff",
+            "color6":"#FFFFFF",
             "color7":"#D2D2D2"
         }
     },
@@ -67,25 +67,25 @@
        "title": "Tenor Sans, Geneva, Lucida Console, sans-serif",
         "font1": {
             "font-family": "\"Tenor Sans\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "28px",
+            "font-size": "30px",
             "font-weight": "300",
-            "line-height": "36px",
+            "line-height": "38px",
             "color": "@color-swatch4",
             "letter-spacing": "2px"
         },
         "font2": {
             "font-family": "\"Tenor Sans\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "24px",
+            "font-size": "26px",
             "font-weight": "300",
-            "line-height": "32px",
+            "line-height": "30px",
             "color": "@color-swatch4",
             "letter-spacing": "2px"
         },
         "font3": {
             "font-family": "\"Tenor Sans\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "20px",
+            "font-size": "22px",
             "font-weight": "300",
-            "line-height": "28px",
+            "line-height": "30px",
             "color": "@color-swatch4",
             "letter-spacing": "2px"
         },
