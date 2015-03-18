@@ -1,2 +1,4 @@
-# apparel
-BaseKit Ecommerce Template
+Apparel
+=========
+
+BaseKit eCommerce Template
