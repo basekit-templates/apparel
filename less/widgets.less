@@ -273,9 +273,7 @@
     display: none;
     margin: 0;
     padding: 20px;
-    background-color: hsla(hue(@color-swatch3),
-                           saturation(@color-swatch3),
-                           lightness(@color-swatch3), .95);
+    background-color: fade(@color-swatch3, 75%)
 }
 
 // Show Caption
@@ -320,6 +318,16 @@
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    z-index: 9999;
+    &:after {
+        border: 5px solid @color-swatch1;
+        content: "";
+        position: absolute;
+        top: 10px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
     &:hover {
         opacity: 1;
     }
@@ -329,10 +337,7 @@
 .gallery__image-title:after {
     display: block;
     content: '';
-    height: 1px;
     width: 0;
-    background-color: @color-swatch1;
-    margin: .5em auto;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
@@ -341,6 +346,7 @@
         display: none;
     }
 }
+
 .gallery__figure:hover .gallery__caption .image-title:after { width: 70px; }
 
 
@@ -430,14 +436,21 @@
 // 6.  #Slideshow
 // ----------------------------- 
 
-// Slideshow Layout
-// ----------------
-
-// Slideshow Height
+// Homepage Slideshow Height
 .responsiveslideshow, 
 .responsiveslideshow__figure {
     position: relative;
     min-height: 400px;
+}
+
+// Slideshow Layout
+// ----------------
+
+// Slideshow Height
+.homepage-slideshow .responsiveslideshow, 
+.homepage-slideshow .responsiveslideshow__figure {
+    position: relative;
+    min-height: 0;
 }
 
 .responsiveslideshow__slideshow-controls, 
@@ -491,8 +504,9 @@
 // Navigation Buttons
 .slide-navigation {
     position: absolute;
-    top: 180px;
+    top: 50%;
     width: 100%;
+    margin-top: -24px;
 }
 
 .previous-button {
@@ -586,6 +600,10 @@
 
 .widget__paypalbuynow form {
     border: 0;
+    padding: 0;
+    &:after {
+        display: none;
+    }
     @media @tablet {
         text-align: left;
     }
@@ -623,7 +641,6 @@
 input.input[type=email],
 input.input[type=search], 
 .contact-form__textarea {
-    border:0;
     @media @mobile {
         margin-bottom: 10px;
     }
@@ -680,7 +697,6 @@ input.input[type=search],
 }
 
 .socialicons__social-item a:hover {
-    color: @font-swatch9-color;
     text-decoration: none;
 }
 
@@ -702,9 +718,9 @@ input.input[type=search],
 // Body
 .widget__twitter {
     background-color: @color-swatch7;
-    padding: 30px 30px 5px;
+    padding: 40px 40px 15px;
     &:after {
-        border: 5px solid @color-swatch1;
+        border: 8px solid @color-swatch1;
         content: "";
         position: absolute;
         top: 10px;
@@ -724,6 +740,7 @@ input.input[type=search],
     padding: 0;
     position: relative;
     z-index: 9999;
+    padding: 10px;
 }
 
 // Content

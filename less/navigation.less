@@ -36,7 +36,11 @@
 
 // Navigation Link
 .navigation-item .item-name {
-	padding:5px 15px;
+	padding: 5px 15px;
+    &:hover {
+        color: @font-swatch6-color;
+        text-decoration: underline;
+    }
 }
 
 .item-name {
@@ -60,7 +64,6 @@
 
 	&:after {
 		font-family: 'FontAwesome', sans-serif;
-		content: "\f107";
 		display: inline-block;
 		margin-left: 0.8em;
 		-webkit-transition: all 0.2s ease;
@@ -68,10 +71,8 @@
 		-o-transition: all 0.2s ease;
 		transition: all 0.2s ease;
 		@media @tablet {
-			content: "\f054";
+			content: "";
 			font-size: 0.8em;
-			height: 31px;
-			margin-top: -2px;
 		}
 		.navigation-item.open & {
 			@media @tablet {
@@ -134,8 +135,8 @@
             right: 0;
             margin-top: 15px;
             margin-left: -13px;
-            background: @color-swatch3;
-            box-shadow: 0 6px 0 @color-swatch3;
+            background: @color-swatch7;
+            box-shadow: 0 6px 0 @color-swatch7;
             .transition( all, 0.5s, ease );
         }
         &:after {
@@ -148,28 +149,27 @@
             right: 0;
             margin-top: 15px;
             margin-left: -13px;
-            background: @color-swatch3;
+            background: @color-swatch7;
             .transition( all, 0.5s, ease );
         }
     }
     .navigation-toggle:hover {
-        background-color: @color-swatch1;
         border: 0;
             &:before {
-                background: @color-swatch3;
-                box-shadow: 0 6px 0 @color-swatch3;
+                background: @color-swatch7;
+                box-shadow: 0 6px 0 @color-swatch7;
             }
             &:after {
-                background: @color-swatch3;
+                background: @color-swatch7;
             }
     }
     // Toggle Button Open State
     .open & {
         &.navigation-toggle {
-            background-color: @color-swatch1;
+            background-color: @color-swatch3;
             &:before {
                 margin-top: 21px;
-                background: @color-swatch3;
+                background: @color-swatch7;
                 box-shadow: none;
                 -webkit-transform: rotate(45deg);
                 -moz-transform: rotate(45deg);
@@ -188,7 +188,7 @@
                 right: 0;
                 margin-top: 21px;
                 margin-left: -13px;
-                background: @color-swatch3;
+                background: @color-swatch7;
                 box-shadow: none;
                 -webkit-transform: rotate(-45deg);
                 -moz-transform: rotate(-45deg);
@@ -207,7 +207,11 @@
     }
     .navigation-item {
         width: 100%;
-        border-bottom: 1px solid darken(@color-swatch1, 7%);
     }
+}
+
+.extendednavigation li.selected a, .extendednavigation li.selected .text {
+    text-decoration: underline;
+    color: @font-swatch6-color;
 }
 

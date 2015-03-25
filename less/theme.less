@@ -250,10 +250,12 @@ blockquote:before {
 // Form
 // ----------
 
-form, .form {
+form, 
+.form {
     background-color: @color-swatch7;
+    padding: 20px;
     &:after {
-        border: 5px solid @color-swatch1;
+        border: 8px solid @color-swatch1;
         content: "";
         position: absolute;
         top: 10px;
@@ -290,7 +292,7 @@ form, .form {
 
 legend { 
 	width: 100%;
-	padding: 30px 30px 0px;
+	padding: 30px 30px;
 	color: @font-swatch4-color;
 	@media @mobile {
 		padding: 6px 20px;
@@ -326,7 +328,7 @@ input[type="email"],
 input[type="password"],
 textarea,
 .input--single-line {
-    border: 0;
+    border: 1px solid darken(@color-swatch7,8%);
     webkit-appearance: none;
     background-color: @color-swatch1;
     &:focus {
@@ -336,15 +338,14 @@ textarea,
     }
 }
 
-.signupform__label, .contactform__legend, .blogsearch__legend {
+.signupform__label, 
+.contactform__legend, 
+.blogsearch__legend {
     border-bottom: 0;
     text-align: center;
     font-size: @font-swatch1-font-size;
     font-weight: @font-swatch1-font-weight;
-    padding: 30px 0 0;
-    @media @tablet {
-        padding: 30px 0 20px;
-    }
+    padding: 30px 0 20px;
 }
 
 .signupform__input {
@@ -368,16 +369,18 @@ textarea,
 // 4. #Buttons
 // -----------------------------
 
-button, .button {
-    padding: 5px 60px;
+button, 
+.button,
+.blogpostlist__read-more {
+    padding: 8px 60px;
     background-color: @color-swatch3;
     color: @font-swatch7-color;
-    .transition (all,0.3s, ease-in-out);
+    /*.transition (all,0.3s, ease-in-out);
 
     -webkit-backface-visibility: hidden;
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
-            transform: scale(1);
+            transform: scale(1);*/
 }
 
 
