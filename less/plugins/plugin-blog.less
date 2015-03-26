@@ -36,8 +36,8 @@
 .blogpostlist .post-article {
     background-color: @color-swatch7;
     position: relative;
-    padding: 10px;
-    z-index: 9999;
+    padding: 20px 40px 30px 20px;
+    z-index: 2;
     float: left;
     width: 100%;
     &:after {
@@ -71,7 +71,7 @@
 .blogpostlist__post-image {
     float: left;
     width: 50%;
-    @media @mobile {
+    @media @tablet {
         float: initial;
         width: 100%;
     }
@@ -80,7 +80,7 @@
 .blogpostlist__post-content {
     float: right;
     width: 50%;
-    @media @mobile {
+    @media @tablet {
         float: initial;
         width: 100%;
     }
@@ -90,6 +90,10 @@
     @media @mobile {
         padding: 8px 30px;
     }
+}
+
+.blogpostlist__post-excerpt--full {
+    padding: 0px 30px;
 }
 
 // Blog Post List Footer
@@ -122,7 +126,6 @@
 .blogpostlist__post-header,
 .blogpostlist__post-excerpt {
     max-width: 700px;
-    padding: 0 25px;
 }
 
 .post-body.blogpost__post-body,
@@ -159,7 +162,7 @@
     background-color: @color-swatch7;
     position: relative;
     padding: 10px;
-    z-index: 9999;
+    z-index: 2;
     padding: 40px 40px 20px 40px;
     &:after {
         border: 8px solid @color-swatch1;
@@ -172,8 +175,16 @@
     }
 }
 
-.post-footer .timestamp {
-    margin: 0;
+.blogpostlist__post-footer .timestamp {
+    display: inline-block;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    float: right;
+    width: 90%;
+    @media @tablet {
+        width: 100%;
+    }
 }
 
 hr {
@@ -195,4 +206,9 @@ hr {
 
 .blogpost__sharing-links {
     margin-top: 15px;
+}
+
+// Blog Post Buttons
+.blogpost__button {
+    padding: 8px 20px;
 }

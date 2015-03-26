@@ -4,8 +4,18 @@
 
 // Menu Navigation
 .widget__menusections {
-	border-bottom: 1px dashed @color-swatch7;
-	text-align: center;
+  text-align: center;
+  background-color: @color-swatch7;
+  padding: 20px;
+  &:before {
+    border: 8px solid #f2f2f2;
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
     @media @mobile {
         display: none;
     }
@@ -109,7 +119,16 @@
 
 // Section Footer
 .menu__section-footer {
-    border: 1px solid @color-swatch7;
-    padding: 10px 10px 0px;
-    margin-bottom: 10px;
+    text-align: center;
+    background-color: @color-swatch7;
+    padding: 20px;
+    &:before {
+        border: 8px solid #f2f2f2;
+        content: "";
+        position: absolute;
+        top: 10px;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
 }
