@@ -859,6 +859,9 @@ input.input[type=search],
     @media @tablet {
         text-align: center;
     }
+    .companyaddress__address {
+        float: right;
+    }
     .companyaddress__address-line {
         float: left; 
         margin-right: 10px;
@@ -873,6 +876,35 @@ input.input[type=search],
     }
     .twitter__tweet-wrap {
         max-width: 50%;
+    }
+    .signupform__input {
+        width: 100%;
+        text-align: center;
+    }
+    .signupform__label {
+        padding: 0;
+        color: @font-swatch4-color;
+        font-size: @font-swatch3-font-size;
+        &:after {
+            margin: 10px auto 10px;
+        }
+    }
+    .signupform__form-body {
+        margin: 20px auto 0px;
+        @media @mobile {
+            margin: 20px auto 10px;
+        }
+    }
+    .profile__signupform {
+        min-width: 400px;
+        @media @tablet {
+            margin: 10px 0;
+        }
+        @media @mobile {
+            min-width: 250px;
+            max-width: 280px;
+            margin: 0px auto;
+        }
     }
 }
 
