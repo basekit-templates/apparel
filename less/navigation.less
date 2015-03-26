@@ -55,6 +55,7 @@
 }
 
 .navigation-item.folder .navigation__item-name {
+    color: @font-swatch4-color;
 	&:hover {
 		color: @font-swatch4-color;
 	}
@@ -210,8 +211,14 @@
     }
 }
 
-.extendednavigation li.selected a, .extendednavigation li.selected .text {
+.extendednavigation li.selected a, 
+.extendednavigation li.selected .text {
     text-decoration: underline;
     color: @font-swatch6-color;
 }
+
+.navigation-item.folder .navigation-item--child a {
+    color: @font-swatch4-color;
+}
+
 

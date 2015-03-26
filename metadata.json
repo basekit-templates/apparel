@@ -12,8 +12,8 @@
     "widgetVersion":2,
     "images":[
         "images/slideshow-1.jpg",
-                "images/slideshow-2.jpg",
-                        "images/slideshow-3.jpg",
+        "images/slideshow-2.jpg",
+        "images/slideshow-3.jpg",
         "images/logo.png",
         "images/image-1.jpg"
     ],
@@ -112,7 +112,7 @@
             "font-size": "14px",
             "font-weight": "400",
             "line-height": "inherit",
-            "color": "@color-swatch1;",
+            "color": "@color-swatch7;",
             "color-hover": "@color-swatch4",
             "letter-spacing": "2px",
             "background-color": "@color-swatch1",
