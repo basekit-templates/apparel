@@ -863,6 +863,7 @@ input.input[type=search],
 //  ---------------------------
 
 .widgetprofile-right {
+    .clearfix
     text-align: right;
     @media @tablet {
         text-align: center;
@@ -896,15 +897,16 @@ input.input[type=search],
         text-align: center;
     }
     .signupform__label {
-        padding: 0;
-        color: @font-swatch4-color;
-        font-size: @font-swatch3-font-size;
+        display: none;
         &:after {
             margin: 10px auto 10px;
         }
     }
     .signupform__form-body {
         margin: 20px auto 0px;
+        display: table;
+        width: 80%;
+        z-index: 1;
         @media @mobile {
             margin: 20px auto 10px;
         }
@@ -912,9 +914,10 @@ input.input[type=search],
     .profile__signupform {
         width: 400px;
         margin: 0px auto;
-        display: table;
+        display: block;
+        float: right;
         @media @tablet {
-            margin: 10px 0;
+            float: initial;
         }
         @media @mobile {
             min-width: 250px;
@@ -923,32 +926,27 @@ input.input[type=search],
         }
     }
     .signupform__input {
-  width: 69%;
-  float: left;
-  display: inline-block;
-}
-
-.signupform__button {
-    padding: 2px 40px;
-} 
-
-.signupform__form-group {
-    margin-bottom: 0;
-}
-
-.signupform__form-body {
-  margin: 0px auto 10px;
-  display: table;
-  width: 100%;
-  }
-
-  .signupform__label {
-    display: none;
-  }
-
-  .signupform__legend {
-    text-align: left;
-}
+        width: 70%;
+        float: left;
+        display: inline-block;
+    }
+    .signupform__button {
+        padding: 2px 0px;
+        width: 30%;
+        float: right;
+    }
+    .signupform__form-group {
+        margin-bottom: 0;
+    }
+    .signupform__legend {
+        text-align: left;
+        display: inline-block;
+        width: 15%;
+        float: left;
+    @media @tablet {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 
