@@ -16,7 +16,10 @@
 
 // Blog Post List
 .blogpostlist__post-header {
-    margin: 25px auto 0;
+    margin: 25px 25px 0;
+    @media @tablet {
+        margin: 0 25px;
+    }
 }
 
 .post-content {
@@ -83,6 +86,7 @@
     @media @tablet {
         float: initial;
         width: 100%;
+        text-align: center;
     }
 }
 
@@ -181,7 +185,7 @@
     margin: 0 auto;
     border: 1px solid #fff;
     float: right;
-    width: 90%;
+    width: 84%;
     @media @tablet {
         width: 100%;
     }
