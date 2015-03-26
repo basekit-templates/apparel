@@ -829,8 +829,16 @@ input.input[type=search],
             margin: 20px auto 10px;
         }
     }
+    .signupform__form {
+        padding: 0;
+        &:after {
+            display: none;
+        }
+    }
     .profile__signupform {
-        min-width: 400px;
+        width: 400px;
+        margin: 0px auto;
+        display: table;
         @media @tablet {
             margin: 10px 0;
         }
@@ -877,6 +885,12 @@ input.input[type=search],
     .twitter__tweet-wrap {
         max-width: 50%;
     }
+    .signupform__form {
+        padding: 0;
+        &:after {
+            display: none;
+        }
+    }
     .signupform__input {
         width: 100%;
         text-align: center;
@@ -896,7 +910,9 @@ input.input[type=search],
         }
     }
     .profile__signupform {
-        min-width: 400px;
+        width: 400px;
+        margin: 0px auto;
+        display: table;
         @media @tablet {
             margin: 10px 0;
         }
