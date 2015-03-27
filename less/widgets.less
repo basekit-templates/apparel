@@ -175,12 +175,6 @@
 // Image Widget
 
 .imagewidget__image-title {
-    font-size: @font-swatch3-font-size;
-}
-
-
-.imagewidget__image-title,
-.imagewidget__image-description {
     color: @font-swatch4-color;
     font-size: @font-swatch4-font-size;
     line-height: @font-swatch4-line-height;
@@ -191,6 +185,7 @@
     color: @font-swatch5-color;
     font-size: @font-swatch5-font-size;
     line-height: @font-swatch5-line-height;
+    text-shadow: none;
 }
 
 
@@ -754,7 +749,7 @@ input.input[type=search],
 }
 
 .twitter__tweet-wrap {
-    display:inline-block;
+    display: block;
     vertical-align: top;
     @media @tablet {
         max-width:320px;

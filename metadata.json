@@ -3,9 +3,9 @@
     "thumbnail":"apparel.png",
     "screenshot":"apparel.png",
     "tags": {
-        "en": ["business", "corporate", "company", "corporation", "professional", "minimal", "clean", "simple"],
-        "es": ["negocios", "corporativo", "empresa", "corporativo", "profesional", "minimalista", "limpio", "simple"],
-        "pt": ["negócio", "corporativo", "companhia", "corporação", "eleição", "profissional", "minimalista", "limpo", "simples"]
+        "en": ["shopping", "ecommerce", "business", "store", "boutique", "professional", "minimal", "clean", "simple"],
+        "es": ["compras", "ecommerce", "negocios", "tienda", "boutique", "profesional", "minimalista", "limpio", "simple"],
+        "pt": ["compras", "ecommerce", "negócio", "loja", "boutique", "profissional", "minimalista", "limpo", "simples"]
     },
     "pageTypes":["home"],
     "templateType":"standard",
@@ -93,9 +93,9 @@
         },
         "font4": {
             "font-family": "\"Tenor Sans\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "16px",
+            "font-size": "18px",
             "font-weight": "300",
-            "line-height": "24px",
+            "line-height": "26px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
