@@ -130,6 +130,8 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
+    border-right: 1px solid darken(@color-swatch1,65%);
+    margin-right: 5px;
     @media @tablet {
         -webkit-order: 4;
         -ms-flex-order: 4;
@@ -577,6 +579,10 @@
 //  7.4  #CLICK TO CALL
 //  --------------
 
+.widget__clicktocall {
+    padding: 5px 0;
+}
+
 .clicktocall__phone-number-link {
     &:hover {
         text-decoration: none;
@@ -589,6 +595,20 @@
         background-color: @color-swatch3;
     }
 }
+
+@media only screen and (max-width: 568px) {
+.phone-number-link {
+    background-color: @color-swatch3;
+    padding: 12px 40px;
+    color: @font-swatch7-color;
+    }
+}
+
+.phone-number-link {
+        @media @mobile {
+                  padding: 8px 40px;
+        }
+    }
 
 //  7.5  #PAYPAL
 //  --------------
@@ -604,6 +624,7 @@
     }
 }
 
+
 //  7.6 #SLIDESHOW
 //  --------------
 
@@ -613,6 +634,7 @@
     background-color: @color-swatch3;
     color: @font-swatch8-color;
 }
+
 
 
 
