@@ -91,6 +91,9 @@
     .blogpostlist__post-footer .timestamp {
         width: 100%;
     }
+    .blogpostlist__read-more {
+        padding: 8px 30px;
+    }
 }
 
 
@@ -118,7 +121,7 @@
 .blogpostlist .post-article {
     background-color: @color-swatch7;
     position: relative;
-    padding: 20px 40px 30px 20px;
+    padding: 20px 30px 30px 20px;
     z-index: 2;
     float: left;
     width: 100%;
@@ -132,8 +135,14 @@
         right: 10px;
     }
 	@media @mobile {
-		padding:0;
+		padding: 20px 30px 30px 20px;
 	}
+}
+
+.blogpostlist__post-excerpt--full {
+    @media @tablet {
+        margin: 0 25px;
+    }
 }
 
 .blogpostlist__post-article {
@@ -259,6 +268,7 @@
     width: 88%;
     @media @tablet {
         width: 100%;
+        float: initial;
     }
 }
 
