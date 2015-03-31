@@ -258,7 +258,7 @@
 }
 
 .listing-pagination .pagination-item.current a {
-    background-color: @color-swatch3;
+    background-color: lighten(@color-swatch3, 10%);
     color: @font-swatch9-color;
 }
 
@@ -529,19 +529,15 @@
     background-color: @color-swatch1;
 }
 
-// Search Button
+// Search Button + Clear Search Button
 .ecomproductslist__input {
     padding: 5px 30px 4px;
     height: 36px;
 }
 
-.ecomproductslist__button {
-    padding: 3px 30px;
-}
-
-// Clear Search Button
+.ecomproductslist__button,
 .ecomproductslist__button--clear {
-    padding: 3px 30px;
+    padding: 4px 30px;
 }
 
 .product-listing__form-group {

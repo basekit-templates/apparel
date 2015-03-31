@@ -17,9 +17,13 @@
 // Blog Post List
 
 // Blog Post List in 2 columns
-.responsivecolumns .columns-two-left, .responsivecolumns .columns-two-right {
+.responsivecolumns .columns-two-left, 
+.responsivecolumns .columns-two-right {
     .blogpostlist .post-article {
         padding: 20px;
+        @media @tablet {
+            padding: 40px 30px 30px 20px;
+        }
     }
     .blogpostlist__post-image {
         width: 100%;
@@ -37,6 +41,9 @@
     }
     .blogpostlist__post-footer .timestamp {
         width: 100%;
+        @media @tablet {
+            text-align: center;
+        }
     }
 }
 
@@ -262,7 +269,6 @@
     display: inline-block;
     padding: 20px;
     margin: 0 auto;
-    border: 1px solid #fff;
     float: right;
     width: 88%;
     @media @tablet {
@@ -274,7 +280,7 @@
 hr {
     border: 0;
     height: 1px;
-    background-color: @color-swatch7;
+    background-color: @color-swatch3;
 }
 
 .blogpost__image {
