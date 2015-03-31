@@ -19,28 +19,9 @@
 // Blog Post List in 2 columns
 .responsivecolumns .columns-two-left, 
 .responsivecolumns .columns-two-right {
-    .blogpostlist .post-article {
-        padding: 20px;
-        @media @tablet {
-            padding: 40px 30px 30px 20px;
-        }
-    }
-    .blogpostlist__post-image {
-        width: 100%;
-        float: initial;
-    }
-    .blogpostlist__post-content {
-        float: initial;
-        padding: 0px 20px;
-        width: 100%;
-    }
-    .blogpostlist__post-footer {
-        width: 100%;
-        padding: 0;
-        text-align: left;
-    }
     .blogpostlist__post-footer .timestamp {
         width: 100%;
+        padding: 0 20px;
         @media @tablet {
             text-align: center;
         }
@@ -51,25 +32,9 @@
 .responsivecolumns .columns-three-left, 
 .responsivecolumns .columns-three-middle, 
 .responsivecolumns .columns-three-right {
-    .blogpostlist .post-article {
-        padding: 20px;
-    }
-    .blogpostlist__post-image {
-        width: 100%;
-        float: initial;
-    }
-    .blogpostlist__post-content {
-        float: initial;
-        padding: 0px 20px;
-        width: 100%;
-    }
-    .blogpostlist__post-footer {
-        width: 100%;
-        padding: 0;
-        text-align: left;
-    }
     .blogpostlist__post-footer .timestamp {
         width: 100%;
+        padding: 0 20px;
     }
 }
 
@@ -78,28 +43,9 @@
 .responsivecolumns .columns-four-second, 
 .responsivecolumns .columns-four-third, 
 .responsivecolumns .columns-four-fourth {
-    .blogpostlist .post-article {
-        padding: 20px;
-    }
-    .blogpostlist__post-image {
-        width: 100%;
-        float: initial;
-    }
-    .blogpostlist__post-content {
-        float: initial;
-        padding: 0px 20px;
-        width: 100%;
-    }
-    .blogpostlist__post-footer {
-        width: 100%;
-        padding: 0;
-        text-align: left;
-    }
     .blogpostlist__post-footer .timestamp {
         width: 100%;
-    }
-    .blogpostlist__read-more {
-        padding: 8px 30px;
+        padding: 0 20px;
     }
 }
 
@@ -267,8 +213,8 @@
         float: right;
         width: 100%;
         @media @tablet {
-            width: 100%;
-            float: initial;
+            width: initial;
+            padding-left: initial;
         }
     }
 }
