@@ -204,18 +204,26 @@
 
 // Blog Post List Footer
 .blogpostlist__post-footer {
-    width: 100%;
-    padding-left: 50%;
+    width: 50.1%;
+    @media @tablet {
+        width: initial;
+        padding-left: initial;
+    }
     .timestamp {
         display: inline-block;
         padding: 20px 0;
         margin: 0 auto;
         float: right;
         width: 100%;
-        @media @tablet {
-            width: initial;
-            padding-left: initial;
-        }
+    }
+}
+
+.post-image + .post-content + .post-footer {
+    padding-left: 50%;
+    width: 100%;
+    @media @tablet {
+        width: initial;
+        padding-left: initial;
     }
 }
 
