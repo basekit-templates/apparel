@@ -430,7 +430,138 @@
 }
 
 
+// -----------------------------
+// 6.  #Slideshow
+// ----------------------------- 
 
+// Homepage Slideshow Height
+.responsiveslideshow, 
+.responsiveslideshow__figure {
+    position: relative;
+    min-height: 400px;
+}
+
+// Slideshow Layout
+// ----------------
+
+// Slideshow Height
+.homepage-slideshow .responsiveslideshow, 
+.homepage-slideshow .responsiveslideshow__figure {
+    position: relative;
+    min-height: 0;
+}
+
+.responsiveslideshow__slideshow-controls, 
+.responsiveslideshow__caption {
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+// Slideshow Images
+// ----------------
+
+// Use Background-image Method
+.responsiveslideshow__figure {
+    background-size: cover;
+    background-position: center;
+}
+
+// Hide Img Element
+.responsiveslideshow__image {
+    display: none;
+}
+
+.homepage-slideshow .responsiveslideshow__image {
+    display: block;
+    margin: 0px auto;
+}
+
+
+// Slideshow Image Captions
+// ------------------------
+
+.responsiveslideshow__caption {
+    position: absolute;
+    bottom: 140px;
+    width: 100%;
+    padding: 20px;
+    @media @mobile {
+        display: none;
+    }
+}
+
+.responsiveslideshow__image-title, 
+.responsiveslideshow__image-description {
+    padding: 0 10%;
+}
+
+
+// Slideshow Buttons
+.responsiveslideshow__slide-navigation button {
+        @media @mobile {
+        padding: 4px 12px;
+    }
+}
+
+// Navigation Buttons
+.slide-navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -24px;
+}
+
+.previous-button {
+    float: left;
+}
+
+.next-button {
+    float: right;
+}
+
+.pause-toggle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0px auto;
+    width: 110px;
+}
+
+.responsiveslideshow__pause-toggle {
+    &:before {
+        margin-right: 0;
+    }
+}
+
+.responsiveslideshow__control-text {
+    display: none;
+}
+
+// Slideshow Pagination
+.responsiveslideshow__pagination-list {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button--pagination.responsiveslideshow__button {
+    vertical-align: top;
+    padding: 5px 20px;
+    margin-bottom: 5px;
+}
+
+.responsiveslideshow .pagination-item.selected .button--pagination {
+    background-color: @color-swatch3;
+    color: @font-swatch8-color;
+}
+
+.responsiveslideshow__next-button, 
+.responsiveslideshow__previous-button, 
+.responsiveslideshow__pause-toggle {
+    padding: 10px 20px;
+}
 
 
 
@@ -533,6 +664,7 @@
 input.input[type=email],
 input.input[type=search], 
 .contact-form__textarea {
+    -webkit-appearance: none;
     @media @mobile {
         margin-bottom: 10px;
     }
@@ -767,6 +899,11 @@ input.input[type=search],
     }
     .companyaddress__address {
         float: right;
+        @media @tablet {
+            float: initial;
+            margin: 0px auto;
+            display: table;
+        }
     }
     .companyaddress__address-line {
         float: left; 
