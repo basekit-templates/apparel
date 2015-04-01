@@ -130,7 +130,6 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
-    border-right: 1px solid darken(@color-swatch1,65%);
     margin-right: 5px;
     @media @tablet {
         -webkit-order: 4;
@@ -177,18 +176,19 @@
 
 // Image Widget
 
-.imagewidget__image-title {
-    color: @font-swatch4-color;
-    font-size: @font-swatch4-font-size;
-    line-height: @font-swatch4-line-height;
-    text-shadow: none;
-}
-
-.imagewidget__image-description {
-    color: @font-swatch5-color;
-    font-size: @font-swatch5-font-size;
-    line-height: @font-swatch5-line-height;
-    text-shadow: none;
+.imagewidget {
+    .image-title {
+        color: @font-swatch4-color;
+        font-size: @font-swatch4-font-size;
+        line-height: @font-swatch4-line-height;
+        text-shadow: none;
+    }
+    .image-description {
+        color: @font-swatch5-color;
+        font-size: @font-swatch5-font-size;
+        line-height: @font-swatch5-line-height;
+        text-shadow: none;
+    }
 }
 
 
@@ -223,26 +223,28 @@
 
 // Gallery Item
 // For screen size larger than 920px. Media queries below.
-.gallery__gallery-item {
-    position: relative;
-    width: 32%;
-    margin-bottom: 15px;
-    .image-title {
-        font-family:@font-swatch9-font-family;
-        font-size:@font-swatch9-font-size;
-        font-weight: @font-swatch9-font-weight;
-        line-height:@font-swatch9-line-height;
-        color: @font-swatch9-color;
-        letter-spacing: @font-swatch9-letter-spacing;
-    }
-    .image-description {
-        font-family:@font-swatch5-font-family;
-        font-size:@font-swatch5-font-size;
-        font-weight: @font-swatch5-font-weight;
-        line-height:@font-swatch5-line-height;
-        color: @font-swatch9-color;
-        letter-spacing: @font-swatch5-letter-spacing;
-    }
+.gallery {
+    .gallery-item {
+        position: relative;
+        width: 32%;
+        margin-bottom: 15px;
+        .image-title {
+            font-family:@font-swatch9-font-family;
+            font-size:@font-swatch9-font-size;
+            font-weight: @font-swatch9-font-weight;
+            line-height:@font-swatch9-line-height;
+            color: @font-swatch9-color;
+            letter-spacing: @font-swatch9-letter-spacing;
+        }
+        .image-description {
+            font-family:@font-swatch5-font-family;
+            font-size:@font-swatch5-font-size;
+            font-weight: @font-swatch5-font-weight;
+            line-height:@font-swatch5-line-height;
+            color: @font-swatch9-color;
+            letter-spacing: @font-swatch5-letter-spacing;
+        }
+    }  
 }
 
 // Gallery Images
@@ -250,18 +252,20 @@
 
 // Use Background-image Method
 // For screen size larger than 920px. Media queries below.
-.gallery__image-link {
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-bottom: 100%;
+.gallery {
+    .image-link {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 100%;
+    }
+    // Hide Img Element
+    .image {
+        display: none;
+    }
 }
 
-// Hide Img Element
-.gallery__image {
-    display: none;
-}
 
 // Gallery Image Captions
 // ----------------------

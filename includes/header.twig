@@ -1,11 +1,13 @@
 <!-- Header -->
 <header class="template-header">
     <div class="header-wrapper">
-        <div class="header-companyname">
-            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-        </div>
-        <div class="header-extendednavigation">
-            {{widget('extendednavigation', 'extendednavigation', {"align":"right"})|raw}}
+        <div class="headercontent-wrapper">
+            <div class="header-companyname">
+                {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            </div>
+            <div class="header-extendednavigation">
+                {{widget('extendednavigation', 'extendednavigation', {})|raw}}
+            </div>
         </div>
         <div class="header-basket">
             {{widget('ecombasket', 'shopbasket', {})|raw}}
