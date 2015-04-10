@@ -333,6 +333,9 @@
     &:hover {
         opacity: 1;
     }
+    @media @mobile {
+        display: none;
+    }
 }
 
 // Line below title
@@ -427,6 +430,12 @@
 
 .responsivecolumns .gallery__caption-link {
     display: none;
+}
+
+.responsivecolumns .gallery__figure:hover .gallery__caption {
+    &:after {
+        display: none;
+    }
 }
 
 .responsivecolumns .widget__gallery .gallery-item:hover figcaption {
@@ -528,10 +537,11 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
+    top: 50%;
     bottom: 0;
     margin: 0px auto;
     width: 110px;
+    margin-top: -24px;
 }
 
 .responsiveslideshow__pause-toggle {
@@ -662,6 +672,9 @@
     display: table;
     width: 70%;
     text-align: center;
+    @media @mobile {
+        width: 80%;
+    }
 }
 
 // Inputs
@@ -774,6 +787,9 @@ input.input[type=search],
     position: relative;
     z-index: 9999;
     padding: 10px;
+    @media @tablet {
+        padding: 20px;
+    }
 }
 
 // Content
@@ -789,9 +805,6 @@ input.input[type=search],
 .twitter__tweet-wrap {
     display: block;
     vertical-align: top;
-    @media @tablet {
-        max-width:320px;
-    }
     a {
         font-weight: @font-swatch1-font-weight;
     }
@@ -888,6 +901,9 @@ input.input[type=search],
     input.input[type=search], 
     .contact-form__textarea {
         color: @font-swatch5-color;
+    }
+    .twitter__tweet-meta {
+        font-size: 13px;
     }
 }
 
@@ -1013,6 +1029,7 @@ input.input[type=search],
 
 
 
+
 // -----------------------------
 // 14. #Facebook
 // -----------------------------
@@ -1028,6 +1045,12 @@ input.input[type=search],
 // 15. Yelp
 // -----------------------------
 
+.yelpreview__review-list {
+    background-color: @color-swatch7;
+    margin: 0;
+    padding: 20px;
+}
+
 .yelp-reviews__review-title {
     font-size: @font-swatch4-font-size;
 }
@@ -1035,6 +1058,7 @@ input.input[type=search],
 .yelpreview__review-item {
     list-style: none;
 }
+
 
 
 

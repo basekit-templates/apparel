@@ -8,7 +8,7 @@
         "pt": ["compras", "ecommerce", "negócio", "loja", "boutique", "profissional", "minimalista", "limpo", "simples"]
     },
     "pageTypes":["home"],
-    "templateType":"standard",
+    "templateType":"ecommerce",
     "widgetVersion":2,
     "images":[
         "images/slideshow/slideshow-1.jpg",
