@@ -42,6 +42,16 @@
 
 // ** Styles for advanced Baseplate template - remove when developing a custom template
 
+
+// Body
+// --------------
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 // Page Container
 // --------------
 
@@ -148,26 +158,10 @@
 
 // Sticky Footer
 .bk-pt-default {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;    
-    min-height: 100vh;
-    flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    background-color: @color-swatch1;
+    flex: 1;
 }
 
 .bk-pt-default .container {
-    flex: 1;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    width: 100%;
 }
 
 // Default Page Title
