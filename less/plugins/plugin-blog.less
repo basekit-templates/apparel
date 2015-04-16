@@ -240,7 +240,7 @@
     width: 100%;
     @media @tablet {
         width: initial;
-        padding-left: initial;
+        padding-left: 0;
     }
 }
 
@@ -280,8 +280,9 @@
 }
 
 // Blog Post
-.blogpost__post-content {
-	text-align: center;
+
+.blogpost__post-header {
+    text-align: center;
 }
 
 .blogpost__post-article {
@@ -309,6 +310,14 @@ hr {
 
 .blogpost__image {
     margin: 0 auto;
+}
+
+.tag-item a:after {
+   content: ",";
+}
+
+.tag-item:last-of-type a:after {
+    display: none;
 }
 
 // Blog Post List Footer
