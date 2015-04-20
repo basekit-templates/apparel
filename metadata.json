@@ -1,20 +1,21 @@
 {
-    "name":"apparel",
+    "name":"Apparel",
     "thumbnail":"apparel.png",
     "screenshot":"apparel.png",
     "tags": {
-        "en": ["design", "portfolio", "art", "images", "agency", "creative", "clean", "media", "studio", "photography"],
-        "es": ["diseño", "portafolio", "arte", "imágenes", "agencia", "limpio", "comunicacion", "estudio", "fotografico"],
-        "pt": ["design", "portfolio", "arte", "imagens", "agência", "limpo", "mídia", "estúdio", "fotografia"]
+        "en": ["shopping", "ecommerce", "business", "store", "boutique", "professional", "minimal", "clean", "simple"],
+        "es": ["compras", "ecommerce", "negocios", "tienda", "boutique", "profesional", "minimalista", "limpio", "simple"],
+        "pt": ["compras", "ecommerce", "negócio", "loja", "boutique", "profissional", "minimalista", "limpo", "simples"]
     },
     "pageTypes":["home"],
-    "templateType":"standard",
+    "templateType":"ecommerce",
     "widgetVersion":2,
     "images":[
-        "images/feature-bg.jpg",
-        "images/gallery/1.jpg",
-        "images/gallery/2.jpg",
-        "images/logo.png"
+        "images/slideshow/slideshow-1.jpg",
+        "images/slideshow/slideshow-2.jpg",
+        "images/slideshow/slideshow-3.jpg",
+        "images/logo.png",
+        "images/image-1.jpg"
     ],
     "colorSwatches":
     {
