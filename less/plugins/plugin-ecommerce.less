@@ -46,9 +46,16 @@
 .ecombasketsummary__summary-section {
     padding: 20px;
     background-color: @color-swatch7;
+    text-align: center;
     @media @tablet {
         padding: 20px;
     }
+}
+
+.ecombasketsummary__summary-form:after, 
+.ecomproductslist__form:after, 
+.ecomproduct__form:after {
+    display: none;
 }
 
 .ecomproduct__legend {
@@ -406,7 +413,7 @@
 .show-content .basket-body {
     display: block;
     position: absolute;
-    z-index: 9999;
+    z-index: 99999;
     right: 0;
     background-color: @color-swatch7;
     padding: 20px 0px;
@@ -439,17 +446,17 @@
 // -------------------------------
 
 // Basket Summary Content
-.basket-summary__summary-title {
-    margin-bottom:20px;
-}
-
-.basket-summary__summary-section {
-    text-align: center;
-}
-
-.basket-summary__summary-form {
-    border:0;
-    padding:0;
+.basket-summary {
+    .summary-title {
+        margin-bottom:20px;
+    }
+    .summary-section {
+        text-align: center;
+    }
+    .summary-form {
+        border:0;
+        padding:0;
+    }
 }
 
 .ecombasketsummary__summary-table,
@@ -494,21 +501,27 @@
     }
 }
 
-.ecombasketsummary__image {
-    max-width: 140px;
-}
-
-.ecombasketsummary__summary-item-link {
-    background-image: none!important;
+.ecombasketsummary {
+    .image {
+        max-width: 140px;
+    }
+    .summary-item-link {
+        background-image: none!important;
+    }
+    .quantity-wrap {
+        background-color: @color-swatch7;
+    }
+    .message {
+        margin: 20px 0;
+    }
+    .order-total {
+        text-align: right;
+    }
 }
 
 .quantity-wrap .button--quantity {
     font-size: 13px;
     padding-left: 1px;
-}
-
-.ecombasketsummary__quantity-wrap {
-    background-color: @color-swatch7;
 }
 
 .quantity-wrap {
@@ -518,9 +531,6 @@
     }
 }
 
-.ecombasketsummary__message {
-    margin: 20px 0;
-}
 
 
 
