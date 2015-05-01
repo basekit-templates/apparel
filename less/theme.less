@@ -349,10 +349,16 @@ textarea,
     background-color: @color-swatch1;
     border-radius: 0;
     &:focus {
-        border: 0;
+        border: 1px solid darken(@color-swatch7,8%)!important;
         box-shadow: none;
         outline: none;
     }
+}
+
+input.input[type=email]:focus, 
+input.input[type=search]:focus, 
+.contact-form__textarea:focus {
+    border: 1px solid darken(@color-swatch7,8%)!important;
 }
 
 .signupform__label, 
