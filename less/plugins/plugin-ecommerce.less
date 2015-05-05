@@ -392,7 +392,6 @@
         display: block;
         padding: 0px 0px 10px;
     }
-
     img, .logo {
         line-height: 0;
     }
@@ -417,9 +416,14 @@
     background-color: @color-swatch7;
     padding: 20px 0px;
     min-width: 390px;
+    top: 63px;
+    -webkit-box-shadow: 0.5px 0.5px 2px 1px #EDEDED;
+    box-shadow: 0.5px 0.5px 2px 1px #EDEDED;
     @media @tablet {
         position: relative;
         margin-top: 20px;
+        top: 0;
+        box-shadow: none;
     }
     @media @mobile {
         min-width: 300px;

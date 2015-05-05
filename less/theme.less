@@ -252,6 +252,32 @@ blockquote:before {
 	color: @color-swatch3;
 }
 
+// Heading's BKscale for Mobile
+// ----------
+
+.logo-banner-left h1,
+.logo-banner-right h1,
+h1 {
+    @media @mobile {
+        font-size: bkscale(@font-swatch1-font-size,0.9);
+        line-height: bkscale(@font-swatch1-line-height,0.9);
+    }
+}
+
+h2 {
+    @media @mobile {
+        font-size: bkscale(@font-swatch2-font-size,0.9);
+        line-height: bkscale(@font-swatch2-line-height,0.9);
+    }
+}
+
+h3 {
+    @media @mobile {
+        font-size: bkscale(@font-swatch3-font-size,0.9);
+        line-height: bkscale(@font-swatch3-line-height,0.9);
+    }
+}
+
 
 
 
