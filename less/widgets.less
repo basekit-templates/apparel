@@ -92,11 +92,6 @@
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
-    -webkit-box-flex: 10;
-    -moz-box-flex: 10;
-    -webkit-flex: 10 10 auto;
-    -ms-flex: 10 10 auto;
-    flex: 10 10 auto;
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
@@ -434,13 +429,17 @@
 }
 
 .responsivecolumns .gallery__caption-link {
-    display: none;
+    @media @tablet {
+        display: none;
+    }
 }
 
 .responsivecolumns .gallery__figure:hover .gallery__caption {
+    @media @tablet {
     &:after {
         display: none;
     }
+}
 }
 
 .responsivecolumns .widget__gallery .gallery-item:hover figcaption {
@@ -919,6 +918,9 @@ input.input[type=search],
     .socialicons__social-item a:hover {
         border: 0;
     }
+    .socialicons__social-item:hover {
+        transform: initial;
+    }
     input.input[type=email], 
     input.input[type=search], 
     .contact-form__textarea {
@@ -961,7 +963,15 @@ input.input[type=search],
         }
     }
     .twitter__tweet-wrap {
+        padding-right: 90px;
+    }
+    .twitter__tweet-item {
         max-width: 50%;
+        float: right;
+        @media @tablet {
+            float: initial;
+            max-width: 100%;
+        }
     }
     .signupform__form {
         padding: 0;
