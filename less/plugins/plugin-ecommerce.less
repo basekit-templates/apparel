@@ -79,6 +79,10 @@
     }
 }
 
+.ecombasketsummary__summary-title {
+    display: none;
+}
+
 .ecomfeaturedproducts__listing-title {
     text-align: center;
     margin-bottom: 20px;
@@ -106,7 +110,7 @@
 }
 
 .ecomproduct__product-image {
-    width: 100%;
+    width: 90%;
     float: left;
     @media @tablet {
         float: initial;
@@ -177,8 +181,11 @@
     position: relative;
 }
 
-.ecom-product-go-to-checkout-btn { 
-    padding: 8px 68px;
+.ecomproduct__button,
+.ecom-product-go-to-checkout-btn {
+    min-width: 220px;
+    padding: 10px 0;
+    text-align: center;
 }
 
 
@@ -327,6 +334,20 @@
     margin-right: 20px;
     text-align: left;
     max-width: 50%;
+}
+
+.basket-item-image {
+    max-width: 30%;
+    float: left;
+    @media @tablet {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+}
+
+.basket-item-details {
+    max-width: 65%;
     @media @tablet {
         width: 100%;
         max-width: 100%;
@@ -616,6 +637,7 @@
 }
 
 select {
+    min-width: 50px;
     @media @tablet {
         width:100%;
     }

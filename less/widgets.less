@@ -17,10 +17,8 @@
 
 //  7.   #BUTTONS
 //  7.1  -- #STANDARD
-//  7.2  -- #TWEET
-//  7.3  -- #DROPBOX
+//  7.2  -- #TWEET, #DROPBOX, #PAYPAL
 //  7.4  -- #CLICK TO CALL
-//  7.5  -- #PAYPAL
 
 //  8.   #CONTACT FORM
 //  9.   #SIGNUP FORM
@@ -463,6 +461,10 @@
     position: relative;
 }
 
+.homepage-slideshow .responsiveslideshow__figure {
+    padding-bottom: 28%;
+}
+
 // Slideshow Layout
 // ----------------
 
@@ -487,7 +489,7 @@
 .responsiveslideshow__figure {
     background-size: cover;
     background-position: center;
-    padding-bottom: 28%;
+    padding-bottom: 60%;
 }
 
 // Hide Img Element
@@ -606,15 +608,30 @@
 //  --------------
 
 
-//  7.2  #TWEET
+//  7.2  #TWEET, PAYPAL, DROPBOX
 //  --------------
 
+.tweet__button, 
+.paypalbuynow__button, 
+.dropbox__button.js-link-btn {
+    min-width: 220px;
+    text-align: center;
+    padding: 8px 0px;
+}
 
-//  7.3  #DROPBOX
-//  --------------
+.widget__paypalbuynow form {
+    border: 0;
+    padding: 0;
+    &:after {
+        display: none;
+    }
+    @media @tablet {
+        text-align: left;
+    }
+}
 
 
-//  7.4  #CLICK TO CALL
+//  7.3  #CLICK TO CALL
 //  --------------
 
 .widget__clicktocall {
@@ -648,22 +665,8 @@
         }
     }
 
-//  7.5  #PAYPAL
-//  --------------
 
-.widget__paypalbuynow form {
-    border: 0;
-    padding: 0;
-    &:after {
-        display: none;
-    }
-    @media @tablet {
-        text-align: left;
-    }
-}
-
-
-//  7.6 #SLIDESHOW
+//  7.4 #SLIDESHOW
 //  --------------
 
 .responsiveslideshow__next-button, 
