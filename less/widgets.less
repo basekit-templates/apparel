@@ -396,7 +396,6 @@
     width: 100%;
     position: absolute;
     z-index: 69;
-
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -425,6 +424,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    padding: 20px;
     &:hover {
         text-decoration: none;
     }
@@ -438,17 +438,20 @@
 
 .responsivecolumns .gallery__figure:hover .gallery__caption {
     @media @tablet {
-    &:after {
-        display: none;
+        &:after {
+            display: none;
+        }
     }
 }
+
+.responsivecolumns .gallery__figure .gallery__caption {
+    display: none;
 }
 
 .responsivecolumns .widget__gallery .gallery-item:hover figcaption {
     background-color: transparent;
     border: 0;
 }
-
 
 
 
