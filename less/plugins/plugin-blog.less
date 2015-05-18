@@ -340,8 +340,8 @@ hr {
 }
 
 .icon--twitter:before, 
-.icon--paypal:before, 
-.icon--dropbox:before {
+.icon--facebook:before, 
+.icon--googleplus:before {
     margin-right: 10px;
 }
 
@@ -349,4 +349,15 @@ hr {
 .blogpost__button {
     padding: 8px 20px;
     min-width: 220px;
+    @media @mobile {
+        min-width: 100%;
+        width: 100%;
+    }
+}
+
+.network-item {
+    @media @mobile {
+        display: block;
+        margin-right: 0;
+    }
 }
