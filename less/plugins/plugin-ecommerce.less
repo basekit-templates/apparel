@@ -60,7 +60,7 @@
 
 .ecomproduct__legend {
     padding: 36px 30px 20px;
-    width: initial;
+    width: 100%;
 }
 
 .ecomproduct__product-actions {
@@ -76,6 +76,22 @@
 .ecomfeaturedproducts__listing-title {
     @media @tablet {
         text-align: center;
+    }
+}
+
+.ecomproduct__product-title {
+    display: inline-block;
+    @media @tablet {
+        display: block;
+    }
+}
+
+.ecomproduct__product-price {
+    display: inline-block;
+    float: right;
+    @media @tablet {
+        float: inherit;
+        display: block;
     }
 }
 
@@ -559,6 +575,20 @@
 // Basket Empty Message
 .message:before {
     position: relative;
+}
+
+.message {
+  position: relative;
+  clear: both;
+  color: @color-swatch3;
+  padding-left: 0;
+  border: 1px solid @color-swatch1;
+  padding: 10px 20px;
+  display: block;
+  margin-bottom: 10px;
+  p {
+      display: inline-block;
+  }
 }
 
 
