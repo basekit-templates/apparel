@@ -1,7 +1,7 @@
 {
     "name":"Apparel",
     "thumbnail":"apparel.png",
-    "screenshot":"apparel.png",
+    "screenshot":"apparel-screenshot.jpg",
     "tags": {
         "en": ["shopping", "ecommerce", "business", "store", "boutique", "professional", "minimal", "clean", "simple"],
         "es": ["compras", "ecommerce", "negocios", "tienda", "boutique", "profesional", "minimalista", "limpio", "simple"],
