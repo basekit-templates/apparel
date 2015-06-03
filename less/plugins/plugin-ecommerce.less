@@ -665,10 +665,26 @@
     }
 }
 
+// General Select Elements
 select {
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0 30px 0 12px;
     min-width: 50px;
     @media @tablet {
-        width:100%;
+        width: 100%;
+    }
+}
+
+.select-wrap {
+    position: relative;
+    &:after {
+        font-family: 'FontAwesome', sans-serif;
+        text-rendering: auto;
+        content:"\f0d7";
+        position: absolute;
+        right: 10px;
+        top: 16%;
     }
 }
 
