@@ -2,6 +2,35 @@
 // Apparel: CSS > Navigation
 // -----------------------------
 
+
+// Transition
+// --------------
+
+/* Effect 15: scale down, reveal */
+.extendednavigation__item-name {
+    color: rgba(0,0,0,0.2);
+    font-weight: 700;
+    text-shadow: none;
+}
+
+.extendednavigation__item-name::before {
+    color: #fff;
+    content: attr(data-hover);
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.extendednavigation__item-name:hover::before,
+.extendednavigation__item-name:focus::before {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+
 // Navigation Bar
 // --------------
 
@@ -42,8 +71,7 @@
 .navigation-item .item-name {
 	padding: 5px 15px;
     &:hover {
-        color: @font-swatch6-color;
-        text-decoration: underline;
+        color: @color-swatch2;
     }
 }
 
@@ -53,12 +81,17 @@
 
 // Selected Class
 .extendednavigation li.selected > a  {
-    text-decoration: underline;
-    color: @font-swatch6-color;
+    color: @color-swatch2;
 }
 
 .navigation-item.folder .navigation-item--child a {
     color: @font-swatch4-color;
+    &:before {
+        color: @font-swatch4-color;
+        &:hover {
+            color: red;
+        }
+    }
 }
 
 .extendednavigation__navigation-item.folder.selected span {
