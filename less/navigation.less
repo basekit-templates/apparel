@@ -8,25 +8,27 @@
 
 /* Effect 15: scale down, reveal */
 .extendednavigation__item-name {
-    color: rgba(0,0,0,0.2);
+    color: @font-swatch6-color;
     font-weight: 700;
     text-shadow: none;
+    text-rendering: optimizelegibility;
 }
 
 .extendednavigation__item-name::before {
-    color: #fff;
+    color: @font-swatch6-color;
     content: attr(data-hover);
     position: absolute;
-    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
-    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.5s, opacity 0.3s;
+    transition: transform 0.5s, opacity 0.3s;
+    text-rendering: optimizelegibility;
 }
 
 .extendednavigation__item-name:hover::before,
 .extendednavigation__item-name:focus::before {
-    -webkit-transform: scale(0.9);
-    -moz-transform: scale(0.9);
-    transform: scale(0.9);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
     opacity: 0;
 }
 
@@ -70,8 +72,9 @@
 // Navigation Link
 .navigation-item .item-name {
 	padding: 5px 15px;
+    color: @color-swatch2;
     &:hover {
-        color: @color-swatch2;
+        -webkit-backface-visibility: hidden;
     }
 }
 
@@ -88,21 +91,18 @@
     color: @font-swatch4-color;
     &:before {
         color: @font-swatch4-color;
-        &:hover {
-            color: red;
-        }
+    }
+    &:hover {
+        color: @font-swatch6-color-hover;
     }
 }
 
-.extendednavigation__navigation-item.folder.selected span {
-    color: @font-swatch6-color;
-    text-decoration: underline;
+.extendednavigation__navigation-item.folder.selected span,
+.extendednavigation__navigation-item.folder.selected .selected {
+    color: @font-swatch6-color!important;
+    text-decoration: underline!important;
 }
 
-.extendednavigation__navigation-item.folder.selected .selected {
-    color: @font-swatch6-color;
-    text-decoration: underline;
-}
 
 // Dropdown Menu
 // -------------
