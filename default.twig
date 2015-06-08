@@ -8,7 +8,7 @@
     <div class="template-title">
     	{{widget('logo', 'sitelogo', {"defaultlogo": asset('images/logo.png')})|raw}}
         <h1 style="padding-bottom: 0;">
-            {{widget('pagetitle', 'pagetitle-id', {})|raw}}
+            <span>{{ page.title }}</span>
         </h1>
     </div>
 </div>
