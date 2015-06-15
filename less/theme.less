@@ -258,26 +258,40 @@ blockquote:before {
 .logo-banner-left h1,
 .logo-banner-right h1,
 h1 {
+    @media @tablet {
+        font-size: bkscale(@font-swatch1-font-size,0.8);
+        line-height: bkscale(@font-swatch1-line-height,0.9);
+    }
     @media @mobile {
-        font-size: bkscale(@font-swatch1-font-size,0.9);
+        font-size: bkscale(@font-swatch1-font-size,0.8);
         line-height: bkscale(@font-swatch1-line-height,0.9);
     }
 }
 
 h2 {
     @media @mobile {
-        font-size: bkscale(@font-swatch2-font-size,0.9);
+        font-size: bkscale(@font-swatch2-font-size,0.8);
         line-height: bkscale(@font-swatch2-line-height,0.9);
     }
 }
 
 h3 {
     @media @mobile {
-        font-size: bkscale(@font-swatch3-font-size,0.9);
+        font-size: bkscale(@font-swatch3-font-size,0.8);
         line-height: bkscale(@font-swatch3-line-height,0.9);
     }
 }
 
+h4 {
+    @media @tablet {
+        font-size: bkscale(@font-swatch4-font-size,0.8);
+        line-height: bkscale(@font-swatch4-line-height,0.9);
+    }
+    @media @mobile {
+        font-size: bkscale(@font-swatch4-font-size,0.8);
+        line-height: bkscale(@font-swatch4-line-height,0.9);
+    }
+}
 
 
 
