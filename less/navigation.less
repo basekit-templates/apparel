@@ -131,7 +131,8 @@
 	}
 }
 
-.navigation-list--children, .default-page .navigation-list--children {
+.navigation-list--children, 
+.default-page .navigation-list--children {
 	background-color:@color-swatch1;
 	border: 1px solid @color-swatch7;
     z-index: 99999;
@@ -151,7 +152,10 @@
 }
 
 .navigation-list--children .item-name {
-    color: @font-swatch4-color;
+    color: @color-swatch3!important;
+    &:hover {
+        color: @color-swatch2!important
+    }
 }
 
 
