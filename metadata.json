@@ -191,29 +191,6 @@
             "color__navigation-list--background": "@color-swatch3",
             "color__navigation-item--text": "@color-swatch3",
             "color__navigation-item--selected": "@color__secondary"
-        },
-        "ecommerce": {
-            "color__ecomproductslist--background": "transparent",
-            "color__ecomproductslist-filters--background": "transparent",
-            "color__ecomproductslist-legend--background": "transparent",
-            "color__ecomproductslist-legend--text": "@color-swatch4",
-            "color__ecomproductslist-label--text": "@color-swatch4",
-            "color__ecomproductslist-product-list--background": "transparent",
-            "color__ecomproductslist-product-item--background": "@color-swatch7",
-            "color__ecomproductslist-product-title--background": "transparent",
-            "color__ecomproductslist-product-title--text": "@color__primary",
-            "color__ecomproduct--background": "@color-swatch7",
-            "color__ecomproduct-images--background": "darken(@color-swatch1,5%)",
-            "color__ecomproduct-content--background": "transparent",
-            "color__ecomproduct-title--background": "transparent",
-            "color__ecomproduct-title--text": "@color-swatch4",
-            "color__ecomproduct-price--background": "transparent",
-            "color__ecomproduct-price--text": "@color-swatch4",
-            "color__ecombasket--background": "transparent",
-            "color__ecombasket-list--background": "transparent",
-            "color__ecombasket-button--background": "@color__primary",
-            "color__ecombasket-button--background--hover": "darken(@color__primary, 10%)",
-            "color__ecombasket-button--text": "@color-swatch1"
         }
     }
 }
