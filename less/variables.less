@@ -39,9 +39,6 @@ button,
 .button {
 	background-color: @color__button--background;
 	color: @color__button--text;
-	&:hover {
-		background-color: @color__button--background--hover;
-	}
 }
 
 .template-header {
@@ -53,7 +50,15 @@ button,
 }
 
 .extendednavigation {
-	background-color: @color__navigation--background;
+	&__navigation--text {
+		color: @color__navigation--text;
+		&:hover {
+			color: @color__navigation--text--hover;
+		}
+	}
+	&__navigation-item.selected {
+		color: @color__navigation-item--selected;
+	}
 	&__navigation-body {
 		background-color: @color__navigation-list--background;
 	}
@@ -62,8 +67,5 @@ button,
 		&:hover {
 			color: @color__navigation-item--selected;
 		}
-	}
-	&__navigation-item.selected {
-		color: @color__navigation-item--selected;
 	}
 }
