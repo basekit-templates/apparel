@@ -192,16 +192,6 @@
             "color__navigation-item--text": "@color-swatch3",
             "color__navigation-item--selected": "@color__secondary"
         },
-        "slideshow": {
-            "color__slideshow--background": "transparent",
-            "color__slideshow-caption--background": "@color-swatch5",
-            "color__slideshow-title--text": "@color-swatch1",
-            "color__slideshow-description--text": "@color-swatch1",
-            "color__slideshow-pagination-item--background": "transparent",
-            "color__slideshow-pagination-item--background--selected": "@color__secondary",
-            "color__slideshow-pagination-item--text": "@color-swatch4",
-            "color__slideshow-pagination-item--text--hover": "@color__secondary"
-        },
         "ecommerce": {
             "color__ecomproductslist--background": "transparent",
             "color__ecomproductslist-filters--background": "transparent",
