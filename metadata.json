@@ -160,36 +160,34 @@
         },
         "site": {
             "color__body--background": "@color-swatch1",
-            "color__container--background": "@color-swatch1",
             "color__link--text": "@color__secondary",
-            "color__companyname--text": "@color-swatch7"
+            "color__companyname--text": "@font-swatch10-color"
         },
         "typography": {
-            "color__h1--text": "@color-swatch4",
-            "color__h2--text": "@color-swatch4",
-            "color__h3--text": "@color-swatch4",
-            "color__h4--text": "@color-swatch4",
-            "color__p--text": "@color-swatch5"
+            "color__h1--text": "@font-swatch1-color",
+            "color__h2--text": "@font-swatch2-color",
+            "color__h3--text": "@font-swatch3-color",
+            "color__h4--text": "@font-swatch4-color",
+            "color__p--text": "@font-swatch5-color"
         },
         "button": {
-            "color__button--background": "@transparent",
+            "color__button--background": "@color__primary",
             "color__button--background--hover": "@color__primary",
-            "color__button--text": "@color-swatch6",
-            "color__button--text--hover": "@color-swatch6"
+            "color__button--text": "@font-swatch6-color",
+            "color__button--text--hover": "@font-swatch6-color"
         },
         "header": {
-            "color__header--background": "@color-swatch3"
+            "color__header--background": "@color__primary"
         },
         "footer": {
             "color__footer--background": "@color__primary"
         },
         "navigation": {
-            "color__navigation--background": "@color-swatch3",
-            "color__navigation--text": "@color-swatch6",
-            "color__navigation--text--hover": "@color__secondary",
+            "color__navigation--text": "@font-swatch6-color",
+            "color__navigation--text--hover": "@font-swatch6-color",
             "color__navigation--text--selected": "@color__secondary",
             "color__navigation-list--background": "@color-swatch3",
-            "color__navigation-item--text": "@color-swatch3",
+            "color__navigation-item--text": "@font-swatch6-color",
             "color__navigation-item--selected": "@color__secondary"
         }
     }
