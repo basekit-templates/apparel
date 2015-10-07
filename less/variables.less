@@ -17,27 +17,22 @@ a {
 
 h1 {
 	color: @color__h1--text;
-	background-color: @color__h1--background;
 }
 
 h2 {
 	color: @color__h2--text;
-	background-color: @color__h2--background;
 }
 
 h3 {
 	color: @color__h3--text;
-	background-color: @color__h3--background;
 }
 
 h4 {
 	color: @color__h4--text;
-	background-color: @color__h4--background;
 }
 
 p {
 	color: @color__p--text;
-	background-color: @color__p--background;
 }
 
 button,
@@ -57,10 +52,6 @@ button,
 	background-color: @color__footer--background;
 }
 
-#page-zones__template-widgets__image-sidebarimage {
-	background-color: @color__sidebar--background;
-}
-
 .extendednavigation {
 	background-color: @color__navigation--background;
 	&__navigation-body {
@@ -74,68 +65,6 @@ button,
 	}
 	&__navigation-item.selected {
 		color: @color__navigation-item--selected;
-	}
-}
-
-.feature {
-	background-color: @color__feature--background;
-	&__content-wrap {
-		background-color: @color__feature-content--background;
-	}
-	&__headline {
-		background-color: @color__feature-headline--background;
-		color: @color__feature-headline--text;
-	}
-	&__strapline {
-		background-color: @color__feature-strapline--background;
-		color: @color__feature-strapline--text;
-	}
-	&__button {
-		background-color: @color__feature-button--background;
-		color: @color__feature-button--text;
-		&:hover {
-			background-color: @color__feature-button--background--hover;
-		}
-	}
-}
-
-form,
-.form {
-	background-color: @color__form--background;
-	legend,
-	.legend {
-		background-color: @color__form-legend--background;
-		color: @color__form-legend--text;
-	}
-	label,
-	.label {
-		color: @color__form-label--text;
-	}
-}
-
-.imagewidget {
-	background-color: @color__image--background;
-	&__caption {
-		background-color: @color__image-caption--background;
-	}
-	&__image-title {
-		color: @color__image-title--text;
-	}
-	&__image-description {
-		color: @color__image-description--text;
-	}
-}
-
-.gallery {
-	background-color: @color__gallery--background;
-	&__caption.caption {
-		background-color: @color__gallery-caption--background
-	}
-	&__image-title.image-title {
-		color: @color__gallery-title--text;
-	}
-	&__image-description.image-description {
-		color: @color__gallery-description--text;
 	}
 }
 
@@ -160,58 +89,6 @@ form,
     .selected .button--pagination {
         background-color: @slideshow__pagination-item-bg-color--selected;
     }
-}
-
-.twitter {
-	background-color: @color__twitter--background;
-	&__tweet-item {
-		background-color: @color__twitter-item--background;
-	}
-	&__account-link {
-		color: @color__twitter-account-name--background;
-	}
-}
-
-.socialicons {
-	&__social-link {
-		background-color: @color__socialicons--icon--background;
-		&::before {
-			color: @color__socialicons--icon;
-		}
-	}
-}
-
-.blogsearch {
-	background-color: @color__blogsearch--background;
-	&__legend.legend {
-		background-color: @color__blogsearch-legend--background;
-		color: @color__blogsearch-legend--text;
-	}
-	&__label.label {
-		color: @color__blogsearch-label--text;
-	}
-}
-
-.blogpostlist {
-	background-color: @color__blogpostlist--background;
-	&__post-article {
-		background-color: @color__blogpostlist-article--background;
-	}
-	&__title-link {
-		background-color: @color__blogpostlist-title--background;
-		color: @color__blogpostlist-title--text;
-	}
-}
-
-.blogpost {
-	background-color:  @color__blogpost--background;
-	&__post-article {
-		background-color: @color__blogpost-article--background;
-	}
-	&__post-title {
-		background-color: @color__blogpost-title--background;
-		color: @color__blogpost-title--text;
-	}
 }
 
 .ecomproductslist {
@@ -266,24 +143,6 @@ form,
 		color: @color__ecombasket-button--text;
 		&:hover {
 			background-color: @color__ecombasket-button--background--hover;
-		}
-	}
-}
-
-.menusections {
-	background-color: @color__menusections--background;
-}
-
-.menu {
-	background-color: @color__menu--background;
-	.menu-item {
-		.item-image .image-link {
-			background-color: lighten(@color__menu-item--background, 3%);
-		}
-		&--featured {
-			.item-image .image-link {
-				background-color: lighten(@color__menu-section-featured--background, 2%);
-			}
 		}
 	}
 }
