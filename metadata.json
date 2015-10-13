@@ -186,6 +186,10 @@
             "color__navigation--text--selected": "@color__secondary",
             "color__navigation-item--text": "@font-swatch6-color",
             "color__navigation-item--selected": "@color__secondary"
+        },
+        "forms": {
+            "color__form--background": "@color-swatch7",
+            "color__form-legend--text": "@color-swatch4"
         }
     }
 }
