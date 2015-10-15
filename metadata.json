@@ -184,8 +184,7 @@
             "color__navigation--text": "@font-swatch6-color",
             "color__navigation--text--hover": "@font-swatch6-color",
             "color__navigation--text--selected": "@color__secondary",
-            "color__navigation-item--text": "@font-swatch6-color",
-            "color__navigation-item--selected": "@color__secondary"
+            "color__navigation-item--background": "@color-swatch1"
         },
         "forms": {
             "color__form--background": "@color-swatch7",
