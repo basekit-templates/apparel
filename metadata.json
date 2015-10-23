@@ -192,7 +192,7 @@
         },
         "twitter": {
             "color__twitter--background": "@color-swatch7",
-            "color__twitter-item--background": "@color-swatch7",
+            "color__twitter-item--background": "@color-swatch7"
             //"color__twitter-account-name--text": "@color-swatch5"
         },
         "blog": {
