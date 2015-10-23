@@ -217,8 +217,8 @@
             "color__ecombasket-button--text": "@font-swatch7-color"
         },
         "menu": {
-            "color__menu--background": "@color-swatch1",
             "color__menusections--background": "@color-swatch1",
+            "color__menu--background": "@color-swatch1",
             "color__menu-item-title--text": "@font-swatch4-color",
             "color__menu-item--background": "@color-swatch1",
             "color__menu-item-featured-title--text": "@font-swatch4-color",
