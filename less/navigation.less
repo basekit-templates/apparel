@@ -8,7 +8,7 @@
 
 /* Effect 15: scale down, reveal */
 .extendednavigation__item-name {
-    color: @font__button--color;
+    color: @color__button--text;
     font-weight: 700;
     text-shadow: none;
     text-rendering: optimizelegibility;
@@ -16,7 +16,7 @@
 }
 
 .extendednavigation__item-name::before {
-    color: @font__button--color;
+    color: @color__button--text;
 }
 
 
@@ -70,24 +70,24 @@
 
 // Selected Class
 .extendednavigation li.selected > a  {
-    color: @font__button--color-hover;
+    color: @color__button--text-hover;
     &:before {
-        color: @font__button--color-hover;
+        color: @color__button--text-hover;
     }
 }
 
 .navigation-item.folder .navigation-item--child a {
     &:before {
-        color: @font__h4--color;
+        color: @color__h4--text;
     }
     &:hover {
-        color: @font__button--color-hover;
+        color: @color__button--text-hover;
     }
 }
 
 .extendednavigation__navigation-item.folder.selected span,
 .extendednavigation__navigation-item.folder.selected .selected {
-    color: @font__button--color;
+    color: @color__button--text;
     text-decoration: underline;
 }
 
@@ -99,9 +99,9 @@
 }
 
 .navigation-item.folder .navigation__item-name {
-    color: @font__h4--color;
+    color: @color__h4--text;
 	&:hover {
-		color: @font__h4--color;
+		color: @color__h4--text;
 	}
 }
 
@@ -137,7 +137,7 @@
 	border: 1px solid @color-swatch7;
     z-index: 99999;
 	.navigation__item-name {
-		color:@font__feature-strapline--color;
+		color:@color__feature-strapline--text;
 	}
 	@media @tablet {
 		position: relative;
