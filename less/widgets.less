@@ -71,12 +71,12 @@
 
 .company-link {
     @media @tablet {
-        font-size: bkscale(@font-swatch10-font-size,0.8);
-        line-height: bkscale(@font-swatch10-line-height,0.8);
+        font-size: bkscale(@font__h1-0-font-size,0.8);
+        line-height: bkscale(@font__h1-0-line-height,0.8);
     }
     @media @mobile {
-        font-size: bkscale(@font-swatch10-font-size,0.7);
-        line-height: bkscale(@font-swatch10-line-height,0.7);
+        font-size: bkscale(@font__h1-0-font-size,0.7);
+        line-height: bkscale(@font__h1-0-line-height,0.7);
     }
 }
 
@@ -152,7 +152,7 @@
 // Add Styles to Selected Li
 .extendednavigation li.selected {
     a, .text {
-        color: @font-swatch6-color-hover;
+        color: @font__button--color-hover;
     }
 }
 
@@ -176,15 +176,15 @@
 
 .imagewidget {
     .image-title {
-        color: @font-swatch4-color;
-        font-size: @font-swatch4-font-size;
-        line-height: @font-swatch4-line-height;
+        color: @font__h4--color;
+        font-size: @font__h4--font-size;
+        line-height: @font__h4--line-height;
         text-shadow: none;
     }
     .image-description {
-        color: @font-swatch5-color;
-        font-size: @font-swatch5-font-size;
-        line-height: @font-swatch5-line-height;
+        color: @font__p--color;
+        font-size: @font__p--font-size;
+        line-height: @font__p--line-height;
         text-shadow: none;
     }
 }
@@ -227,20 +227,20 @@
         width: 49%;
         margin-bottom: 15px;
         .image-title {
-            font-family:@font-swatch9-font-family;
-            font-size:@font-swatch9-font-size;
-            font-weight: @font-swatch9-font-weight;
-            line-height:@font-swatch9-line-height;
-            color: @font-swatch9-color;
-            letter-spacing: @font-swatch9-letter-spacing;
+            font-family:@font__feature-strapline--font-family;
+            font-size:@font__feature-strapline--font-size;
+            font-weight: @font__feature-strapline--font-weight;
+            line-height:@font__feature-strapline--line-height;
+            color: @font__feature-strapline--color;
+            letter-spacing: @font__feature-strapline--letter-spacing;
         }
         .image-description {
-            font-family:@font-swatch5-font-family;
-            font-size:@font-swatch5-font-size;
-            font-weight: @font-swatch5-font-weight;
-            line-height:@font-swatch5-line-height;
-            color: @font-swatch9-color;
-            letter-spacing: @font-swatch5-letter-spacing;
+            font-family:@font__p--font-family;
+            font-size:@font__p--font-size;
+            font-weight: @font__p--font-weight;
+            line-height:@font__p--line-height;
+            color: @font__feature-strapline--color;
+            letter-spacing: @font__p--letter-spacing;
         }
     }  
 }
@@ -340,8 +340,8 @@
     }
     .gallery-item {
         .image-title {
-            font-size: @font-swatch9-font-size;
-            line-height:@font-swatch9-line-height;
+            font-size: @font__feature-strapline--font-size;
+            line-height:@font__feature-strapline--line-height;
         }
     }
 }
@@ -350,8 +350,8 @@
 @media only screen and (max-width : 850px) {
     .gallery-item {
         .image-description {
-            font-size: bkscale(@font-swatch9-font-size,.9);
-            line-height:bkscale(@font-swatch9-line-height,.9);
+            font-size: bkscale(@font__feature-strapline--font-size,.9);
+            line-height:bkscale(@font__feature-strapline--line-height,.9);
         }
     }
 }
@@ -382,12 +382,12 @@
     margin: 0;
     .image-title, 
     .image-description {
-        color: @font-swatch8-color;
+        color: @font__feature-headline--color;
         text-shadow: none;
     }
     .image-title {
-        font-size: @font-swatch4-font-size;
-        line-height: @font-swatch4-line-height;
+        font-size: @font__h4--font-size;
+        line-height: @font__h4--line-height;
     }
 }
 
@@ -585,7 +585,7 @@
 
 .responsiveslideshow .pagination-item.selected .button--pagination {
     background-color: @color-swatch3;
-    color: @font-swatch8-color;
+    color: @font__feature-headline--color;
 }
 
 .responsiveslideshow__next-button, 
@@ -652,7 +652,7 @@
 
 .phone-number-link {
     @media @mobile {
-        color: @font-swatch9-color;
+        color: @font__feature-strapline--color;
         background-color: @color-swatch3;
     }
 }
@@ -661,7 +661,7 @@
 .phone-number-link {
     background-color: @color-swatch3;
     padding: 12px 40px;
-    color: @font-swatch7-color;
+    color: @font__navigation--color;
     }
 }
 
@@ -679,7 +679,7 @@
 .responsiveslideshow__previous-button,
 .responsiveslideshow__pause-toggle {
     background-color: @color-swatch3;
-    color: @font-swatch7-color;
+    color: @font__navigation--color;
 }
 
 
@@ -774,11 +774,11 @@ input.input[type=search],
     border: 1px solid @color-swatch4;
     padding: 10px;
     display: inline-block;
-    color: @font-swatch5-color;
+    color: @font__p--color;
 }
 
 .social-social-link {
-    color: @font-swatch5-color;
+    color: @font__p--color;
 }
 
 
@@ -834,7 +834,7 @@ input.input[type=search],
     display: block;
     vertical-align: top;
     a {
-        font-weight: @font-swatch1-font-weight;
+        font-weight: @font__h1--font-weight;
         word-wrap: break-word;
     }
     p {
@@ -891,8 +891,8 @@ input.input[type=search],
     }
     .signupform__label {
         padding: 0;
-        color: @font-swatch4-color;
-        font-size: @font-swatch3-font-size;
+        color: @font__h4--color;
+        font-size: @font__h3--font-size;
         &:after {
             margin: 10px auto 10px;
         }
@@ -931,7 +931,7 @@ input.input[type=search],
     input.input[type=email], 
     input.input[type=search], 
     .contact-form__textarea {
-        color: @font-swatch5-color;
+        color: @font__p--color;
     }
     .twitter__tweet-meta {
         font-size: 13px;
@@ -1095,7 +1095,7 @@ input.input[type=search],
 }
 
 .yelp-reviews__review-title {
-    font-size: @font-swatch4-font-size;
+    font-size: @font__h4--font-size;
 }
 
 .yelpreview__review-item {

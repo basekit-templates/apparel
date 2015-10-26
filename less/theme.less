@@ -184,14 +184,14 @@
 	min-height: 100px;
 	background-color: @color-swatch3;
 	text-align: center;
-	color: @font-swatch9-color;
+	color: @font__feature-strapline--color;
 	// Change heading elements to white
 	h1, h2, h3, h4 {
-		color: @font-swatch9-color;
+		color: @font__feature-strapline--color;
 	}
 	// Lighten paragraph & link elements
 	p, a {
-		color: @font-swatch9-color;
+		color: @font__feature-strapline--color;
 		padding: 0;
 	}
 	// Reset Twitter feed styles
@@ -259,37 +259,37 @@ blockquote:before {
 .logo-banner-right h1,
 h1 {
     @media @tablet {
-        font-size: bkscale(@font-swatch1-font-size,0.8);
-        line-height: bkscale(@font-swatch1-line-height,0.9);
+        font-size: bkscale(@font__h1--font-size,0.8);
+        line-height: bkscale(@font__h1--line-height,0.9);
     }
     @media @mobile {
-        font-size: bkscale(@font-swatch1-font-size,0.8);
-        line-height: bkscale(@font-swatch1-line-height,0.9);
+        font-size: bkscale(@font__h1--font-size,0.8);
+        line-height: bkscale(@font__h1--line-height,0.9);
     }
 }
 
 h2 {
     @media @mobile {
-        font-size: bkscale(@font-swatch2-font-size,0.8);
-        line-height: bkscale(@font-swatch2-line-height,0.9);
+        font-size: bkscale(@font__h2--font-size,0.8);
+        line-height: bkscale(@font__h2--line-height,0.9);
     }
 }
 
 h3 {
     @media @mobile {
-        font-size: bkscale(@font-swatch3-font-size,0.8);
-        line-height: bkscale(@font-swatch3-line-height,0.9);
+        font-size: bkscale(@font__h3--font-size,0.8);
+        line-height: bkscale(@font__h3--line-height,0.9);
     }
 }
 
 h4 {
     @media @tablet {
-        font-size: bkscale(@font-swatch4-font-size,0.8);
-        line-height: bkscale(@font-swatch4-line-height,0.9);
+        font-size: bkscale(@font__h4--font-size,0.8);
+        line-height: bkscale(@font__h4--line-height,0.9);
     }
     @media @mobile {
-        font-size: bkscale(@font-swatch4-font-size,0.8);
-        line-height: bkscale(@font-swatch4-line-height,0.9);
+        font-size: bkscale(@font__h4--font-size,0.8);
+        line-height: bkscale(@font__h4--line-height,0.9);
     }
 }
 
@@ -349,7 +349,7 @@ form,
 legend { 
 	width: 100%;
 	padding: 30px 30px;
-	color: @font-swatch4-color;
+	color: @font__h4--color;
 	@media @mobile {
 		padding: 6px 20px;
 	}
@@ -406,10 +406,10 @@ input.input[type=search]:focus,
 .blogsearch__legend {
     border-bottom: 0;
     text-align: center;
-    font-size: @font-swatch1-font-size;
-    font-weight: @font-swatch1-font-weight;
+    font-size: @font__h1--font-size;
+    font-weight: @font__h1--font-weight;
     padding: 30px 0 0;
-    color: @font-swatch5-color;
+    color: @font__p--color;
 }
 
 .signupform__label {
@@ -445,7 +445,7 @@ button,
 .blogpostlist__read-more {
     padding: 8px 50px;
     background-color: @color-swatch3;
-    color: @font-swatch7-color;
+    color: @font__navigation--color;
     .transition (all,0.1s, ease-in-out);
 
     -webkit-backface-visibility: hidden;
@@ -474,6 +474,6 @@ button,
 .image-widget__caption { margin: 10px 0; }
 .image-widget__image-title,
 .image-widget__image-description {
-	color: @font-swatch5-color;
+	color: @font__p--color;
 	text-shadow: none;
 }
