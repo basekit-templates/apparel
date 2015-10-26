@@ -169,11 +169,11 @@
             "font__companyname--letter-spacing" : "@font-swatch10-letter-spacing"
         },
         "typography": {
-            "color__h1--text": "@font__h1--color",
-            "color__h2--text": "@font__h2--color",
-            "color__h3--text": "@font__h3--color",
-            "color__h4--text": "@font__h4--color",
-            "color__p--text": "@font__p--color",
+            "color__h1--text": "@color__h1--text",
+            "color__h2--text": "@color__h2--text",
+            "color__h3--text": "@color__h3--text",
+            "color__h4--text": "@color__h4--text",
+            "color__p--text": "@color__p--text",
             "font__h1--font-family" : "@font-swatch1-font-family",
             "font__h1--font-size" : "@font-swatch1-font-size",
             "font__h1--font-weight" : "@font-swatch1-font-weight",
@@ -216,8 +216,8 @@
             "color__footer--background": "@color__primary"
         },
         "navigation": {
-            "color__navigation--text": "@font__button--color",
-            "color__navigation--text--hover": "@font__button--color",
+            "color__navigation--text": "@color__button--text",
+            "color__navigation--text--hover": "@color__button--text",
             "color__navigation--text--selected": "@color__secondary",
             "color__navigation-item--background": "@color-swatch1",
             "font__navigation--font-family" : "@font-swatch6-font-family",
@@ -238,9 +238,9 @@
             "color__blogsearch--background": "@color-swatch1",
             "color__blogsearch-legend--text": "@color-swatch4",
             "color__blogpostlist-article--background": "@color-swatch1",
-            "color__blogpostlist-title--text": "@font__h4--color",
+            "color__blogpostlist-title--text": "@color__h4--text",
             "color__blogpost-article--background": "@color-swatch1",
-            "color__blogpost-title--text": "@font__h4--color"
+            "color__blogpost-title--text": "@color__h4--text"
         },
         "ecommerce": {
             "color__ecomproductslist-filters--background": "@color-swatch1",
@@ -248,19 +248,19 @@
             "color__ecomproductslist-product-item--background": "@color-swatch1",
             "color__ecomproductslist-product-title--text": "@color-swatch4",
             "color__ecomproduct--background": "@color-swatch7",
-            "color__ecomproduct-title--text": "@font__h4--color",
-            "color__ecomproduct-price--text": "@font__h4--color",
+            "color__ecomproduct-title--text": "@color__h4--text",
+            "color__ecomproduct-price--text": "@color__h4--text",
             "color__ecombasket--background": "transparent",
             "color__ecombasket-button--background": "@color-swatch3",
-            "color__ecombasket-button--text": "@font__navigation--color"
+            "color__ecombasket-button--text": "@color__navigation--text"
         },
         "menu": {
             "color__menusections--background": "@color-swatch1",
             "color__menu--background": "@color-swatch1",
-            "color__menu-item-title--text": "@font__h4--color",
+            "color__menu-item-title--text": "@color__h4--text",
             "color__menu-item--background": "@color-swatch1",
-            "color__menu-item-featured-title--text": "@font__h4--color",
-            "color__menu-section-featured--text": "@font__h4--color"
+            "color__menu-item-featured-title--text": "@color__h4--text",
+            "color__menu-section-featured--text": "@color__h4--text"
         }
     }
 }
