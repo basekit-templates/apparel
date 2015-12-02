@@ -232,8 +232,7 @@
         },
         "twitter": {
             "color__twitter--background": "@color-swatch7",
-            "color__twitter-account-name--text": "@font-swatch4-color",
-            "color__twitter-tweet--text": "@font-swatch5-color"
+            "color__twitter-account-name--text": "@font-swatch4-color"
         },
         "slideshow": {
             "color__slideshow-title--text": "@font-swatch7-color",
