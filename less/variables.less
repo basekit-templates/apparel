@@ -47,15 +47,12 @@ button,
 .extendednavigation {
 	.navigation-item .item-name {
 		color: @color__navigation--text;
-		&:hover {
-			color: @color__navigation--text--hover;
+			&:hover {
+				color: @color__navigation--text--hover;
+			}
 		}
-	}
 	&__navigation-item.selected > .item-name {
 		color: @color__navigation--text--selected;
-	}
-	&__navigation-item--background {
-		background-color: @color__navigation-item--background;
 	}
 }
 
@@ -70,9 +67,21 @@ form,
 
 .twitter {
 	background-color: @color__twitter--background;
-	&__tweet-item {
-		background-color: @color__twitter-item--background;
+	&__account-link {
+		color: @color__twitter-account-name--text;
 	}
+	&__tweet-content {
+		color: @color__twitter-tweet--text;
+	}
+}
+
+.responsiveslideshow {
+    &__image-title.image-title {
+        color: @color__slideshow-title--text;
+    }
+    &__image-description.image-description {
+        color: @color__slideshow-description--text;
+    }
 }
 
 // Blog
