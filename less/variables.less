@@ -47,10 +47,10 @@ button,
 .extendednavigation {
 	.navigation-item .item-name {
 		color: @color__navigation--text;
-			&:hover {
-				color: @color__navigation--text--hover;
-			}
+		&:hover {
+			color: @color__navigation--text--hover;
 		}
+	}
 	&__navigation-item.selected > .item-name {
 		color: @color__navigation--text--selected;
 	}
@@ -67,8 +67,11 @@ form,
 
 .twitter {
 	background-color: @color__twitter--background;
-	&__tweet-item {
-		background-color: @color__twitter-item--background;
+	&__account-name {
+		color: @color__twitter-account-name--text;
+	}
+	&__tweet-content {
+		color: @color__twitter-tweet--text;
 	}
 }
 
