@@ -235,8 +235,8 @@
             "color__twitter-account-name--text": "@font-swatch4-color"
         },
         "slideshow": {
-            "color__slideshow-title--text": "@font-swatch7-color",
-            "color__slideshow-description--text": "@font-swatch7-color"
+            "color__slideshow-title--text": "@font-swatch8-color",
+            "color__slideshow-description--text": "@font-swatch9-color"
         }, 
         "blog": {
             "color__blogsearch--background": "@color-swatch1",

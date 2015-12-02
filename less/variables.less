@@ -72,6 +72,15 @@ form,
 	}
 }
 
+.responsiveslideshow {
+    &__image-title.image-title {
+        color: @color__slideshow-title--text;
+    }
+    &__image-description.image-description {
+        color: @color__slideshow-description--text;
+    }
+}
+
 // Blog
 
 .blogsearch {
@@ -132,26 +141,5 @@ form,
 	&__button {
 		background-color: @color__ecombasket-button--background;
 		color: @color__ecombasket-button--text;
-	}
-}
-
-
-// Menu
-
-.menusections {
-	background-color: @color__menusections--background;
-}
-
-.menu {
-	background-color: @color__menu--background;
-	&__menu-item {
-		background-color: @color__menu-item--background;
-		color: @color__menu-item-title--text;
-	}
-	&__item-featured {
-		color: @color__menu-item-featured-title--text;
-	}
-	&__section--featured {
-		color: @color__menu-section-featured--text;
 	}
 }
